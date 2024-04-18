@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2760793385669807815}
   - component: {fileID: 2297728035093187647}
   - component: {fileID: -1507380628306306808}
+  - component: {fileID: 3314356541431617920}
   m_Layer: 0
   m_Name: Ptah
   m_TagString: Untagged
@@ -101,8 +102,7 @@ MonoBehaviour:
   name: Ptah
   faction: Egyptians
   typeCard: Silver
-  description: 
-  fieldPosition: 
+  hability: 
 --- !u!114 &-1507380628306306808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,3 +117,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 1
   attakMode: Melee
+--- !u!61 &3314356541431617920
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264994155211669880}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.68, y: 10.24}
+    newSize: {x: 7.68, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.68, y: 10.24}
+  m_EdgeRadius: 0
