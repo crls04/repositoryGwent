@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8555476412073485500}
   - component: {fileID: 5215641582551793531}
   - component: {fileID: -1531222411655094831}
+  - component: {fileID: -7094430499981706242}
   m_Layer: 0
   m_Name: Plaga
   m_TagString: Untagged
@@ -128,3 +129,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.68, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &-7094430499981706242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480469763453710661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb0170beec9b394691e9ec1b67ebd31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affected: Melee

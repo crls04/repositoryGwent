@@ -8,13 +8,15 @@ public class cardsCharacteristic : MonoBehaviour
     public string faction;
     public string typeCard;
     public string hability;
-    private bool summonedCard = false;
+    public bool summonedCard = false;
+    public bool increased = false;
+    public bool affected = false;
     private void OnMouseDown()
     {
-        if(!summonedCard)
+        if(!summonedCard && GameObject.FindGameObjectWithTag("gameManager").GetComponent<gameManager>().playFaction == faction)
         {
             summonedCard = GameObject.FindGameObjectWithTag(faction).GetComponent<Deck>().summonCards(gameObject);
-
+            
         }
     }
 }

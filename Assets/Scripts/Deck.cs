@@ -28,6 +28,7 @@ public class Deck : MonoBehaviour
     public GameObject deckPosition;
     public GameObject graveyard;
     public GameObject clearance;
+    
 
     public GameObject[] handPosition = new GameObject[10];
     public bool[] handPosition1 = new bool[10];
@@ -67,7 +68,7 @@ public class Deck : MonoBehaviour
     }//invocar cartas
     public bool summonCards(GameObject card)
     {
-        if (!gameManager.playedTurn)
+        if (!gameManager.playedTurn) 
         {
             if (card.GetComponent<cardsCharacteristic>().typeCard == "Silver" || card.GetComponent<cardsCharacteristic>().typeCard == "Gold")
             {
@@ -77,6 +78,15 @@ public class Deck : MonoBehaviour
                     {
                         melee1[f] = true;
                         card.transform.position = melee[f].transform.position;
+                        for (int x = 0; x < gameManager.saveMelee.Length; x++)
+                        {
+                            if (gameManager.saveMelee[x] == null)
+                            {
+                                gameManager.saveMelee[x] = card;
+                                break;
+                            }
+                        }
+                        gameManager.playedTurn = true;
                         return true;
                     }
                 }
@@ -86,6 +96,15 @@ public class Deck : MonoBehaviour
                     {
                         range1[f] = true;
                         card.transform.position = range[f].transform.position;
+                        for (int x = 0; x < gameManager.saveRange.Length; x++)
+                        {
+                            if (gameManager.saveRange[x] == null)
+                            {
+                                gameManager.saveRange[x] = card;
+                                break;
+                            }
+                        }
+                        gameManager.playedTurn = true;
                         return true;
                     }
                 }
@@ -95,13 +114,101 @@ public class Deck : MonoBehaviour
                     {
                         siege1[f] = true;
                         card.transform.position = siege[f].transform.position;
+                        for (int x = 0; x < gameManager.saveSiege.Length; x++)
+                        {
+                            if (gameManager.saveSiege[x] == null)
+                            {
+                                gameManager.saveSiege[x] = card;
+                                break;
+                            }
+                        }
+                        gameManager.playedTurn = true;
                         return true;
                     }
                 }
 
             }
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Increase")
+
+            {
+                if (card.GetComponent<increaseCard>().bonus == "Melee" && !increase1[0])
+                {
+                    increase1[0] = true;
+                    card.transform.position = increase[0].transform.position;
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+                if (card.GetComponent<increaseCard>().bonus == "Range" && !increase1[1])
+                {
+                    increase1[1] = true;
+                    card.transform.position = increase[1].transform.position;
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+                if (card.GetComponent<increaseCard>().bonus == "Siege" && !increase1[2])
+                {
+                    increase1[2] = true;
+                    card.transform.position = increase[2].transform.position;
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+            }
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Weather")
+            {
+                if (card.GetComponent<weatherCards>().affected == "Melee" && !weather1[0])
+                {
+                    weather1[0] = true;
+                    card.transform.position = weather[0].transform.position;
+                    for(int f = 0; f < gameManager.saveWeather.Length; f++)
+                    {
+                        if (gameManager.saveWeather[f] == null)
+                        {
+                            gameManager.saveWeather[f] = card;
+                            break;
+                        }
+                    }
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+                if(card.GetComponent<weatherCards>().affected == "Range" && !weather1[1])
+                {
+                    weather1[1] = true;
+                    card.transform.position = weather[1].transform.position;
+                    for (int f = 0; f < gameManager.saveWeather.Length; f++)
+                    {
+                        if (gameManager.saveWeather[f] == null)
+                        {
+                            gameManager.saveWeather[f] = card;
+                            break;
+                        }
+                    }
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+                if (card.GetComponent<weatherCards>().affected == "Siege" && !weather1[2])
+                {
+                    weather1[2] = true;
+                    card.transform.position = weather[2].transform.position;
+                    for (int f = 0; f < gameManager.saveWeather.Length; f++)
+                    {
+                        if (gameManager.saveWeather[f] == null)
+                        {
+                            gameManager.saveWeather[f] = card;
+                            break;
+                        }
+                    }
+                    gameManager.playedTurn = true;
+                    return true;
+                }
+            }
+            if(card.GetComponent<cardsCharacteristic>().typeCard == "Clearance")
+            {
+                card.transform.position = clearance.transform.position;
+                card.transform.localScale = clearance.transform.localScale;
+                gameManager.playedTurn = true;
+                return true;
+            }
         }
         return false;
     }
 }
-

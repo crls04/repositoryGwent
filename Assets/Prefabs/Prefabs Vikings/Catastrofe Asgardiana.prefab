@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1633306265523440127}
   - component: {fileID: 4293463488989487662}
   - component: {fileID: -9161406060132777003}
+  - component: {fileID: -624620999005191112}
   m_Layer: 0
   m_Name: Catastrofe Asgardiana
   m_TagString: Untagged
@@ -128,3 +129,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.68, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &-624620999005191112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047025228536844519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb0170beec9b394691e9ec1b67ebd31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affected: Siege

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6391824768272347447}
   - component: {fileID: -2550219697394692687}
   - component: {fileID: -5393222143590438085}
+  - component: {fileID: -4415090296960838217}
   m_Layer: 0
   m_Name: Sarcofago
   m_TagString: Untagged
@@ -128,3 +129,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.68, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &-4415090296960838217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436000218585412966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f586eae4f95f76c408ff6b2113738089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonus: Siege
