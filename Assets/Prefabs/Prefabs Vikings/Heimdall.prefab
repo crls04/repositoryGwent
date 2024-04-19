@@ -102,7 +102,12 @@ MonoBehaviour:
   name: Heimdall
   faction: Vikings
   typeCard: Silver
-  hability: 
+  hability: None
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!114 &7432781347953409267
 MonoBehaviour:
   m_ObjectHideFlags: 0

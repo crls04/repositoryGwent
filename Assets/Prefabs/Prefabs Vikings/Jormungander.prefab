@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2007734327188699296}
   - component: {fileID: 8911635664464219096}
   - component: {fileID: -2952161255653427703}
+  - component: {fileID: -1570326555489013817}
   m_Layer: 0
   m_Name: Jormungander
   m_TagString: Untagged
@@ -102,7 +103,12 @@ MonoBehaviour:
   name: Jormungander
   faction: Vikings
   typeCard: Silver
-  hability: 
+  hability: Elimina la carta con menos poder del rival
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!114 &8911635664464219096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +149,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.84, y: 9.12}
   m_EdgeRadius: 0
+--- !u!114 &-1570326555489013817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667364437081273744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1aa7572527fb8349babbb1ac3a02755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  habilityCard: 6
+  Habilidad: 

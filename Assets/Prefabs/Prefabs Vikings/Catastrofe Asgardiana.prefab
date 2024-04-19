@@ -102,7 +102,12 @@ MonoBehaviour:
   name: Catastrofe Asgardiana
   faction: Vikings
   typeCard: Weather
-  hability: 
+  hability: Afecta una unidad quitandole poder
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &-9161406060132777003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affected: Siege
+  gameManager: {fileID: 0}

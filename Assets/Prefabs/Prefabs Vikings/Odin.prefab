@@ -101,7 +101,12 @@ MonoBehaviour:
   name: Odin
   faction: Vikings
   typeCard: Leader
-  hability: 
+  hability: Aumenta el poder de ataque en 2
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &1253542691743515650
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -23,15 +23,18 @@ public class weatherCards : MonoBehaviour
     {
         if (affected == "Melee")
         {
-            for (int i = 0; i < gameManager.saveMelee.Length; i++)
+            for (int f = 0; f < gameManager.saveMelee.Length; f++)
             {
-                if (gameManager.saveMelee[i] != null)
+                if (gameManager.saveMelee[f] != null)
                 {
-                    if (!gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().affected)
+                    if (!gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected)
+                    {
+                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().affected = true;
-                            gameManager.saveMelee[i].GetComponent<UnytCard>().powerCard--;
+                            gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected = true;
+                            gameManager.saveMelee[f].GetComponent<UnytCard>().powerCard--;
                         }
+                    }
                     
                 }
             }
@@ -39,31 +42,35 @@ public class weatherCards : MonoBehaviour
 
         if (affected == "Range")
         {
-            for (int i = 0; i < gameManager.saveRange.Length; i++)
+            for (int f = 0; f < gameManager.saveRange.Length; f++)
             {
-                if (gameManager.saveRange[i] != null)
+                if (gameManager.saveRange[f] != null)
                 {
-                   if (!gameManager.saveRange[i].GetComponent<cardsCharacteristic>().affected)
+                    if (!gameManager.saveRange[f].GetComponent<cardsCharacteristic>().affected)
+                    {
+                        if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveRange[i].GetComponent<cardsCharacteristic>().affected = true;
-                            gameManager.saveRange[i].GetComponent<UnytCard>().powerCard--;
+                            gameManager.saveRange[f].GetComponent<cardsCharacteristic>().affected = true;
+                            gameManager.saveRange[f].GetComponent<UnytCard>().powerCard--;
                         }
-                    
+                    }
                 }
             }
         }
         if (affected == "Siege")
         {
-            for (int i = 0; i < gameManager.saveSiege.Length; i++)
+            for (int f = 0; f < gameManager.saveSiege.Length; f++)
             {
-                if (gameManager.saveSiege[i] != null)
+                if (gameManager.saveSiege[f] != null)
                 {
-                    if (!gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().affected)
+                    if (!gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().affected)
+                    {
+                        if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().affected = true;
-                            gameManager.saveSiege[i].GetComponent<UnytCard>().powerCard--;
+                            gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().affected = true;
+                            gameManager.saveSiege[f].GetComponent<UnytCard>().powerCard--;
                         }
-                    
+                    }
                 }
             }
         }
@@ -74,14 +81,21 @@ public class weatherCards : MonoBehaviour
     {
         if (affected == "Melee")
         {
-            for (int i = 0; i < gameManager.saveMelee.Length; i++)
+            for (int f = 0; f < gameManager.saveMelee.Length; f++)
             {
-                if (gameManager.saveMelee[i] != null)
+                if (gameManager.saveMelee[f] != null)
                 {
-                    if (gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().affected)
+                    if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected)
                     {
-                        gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().affected = false;
-                        gameManager.saveMelee[i].GetComponent<UnytCard>().powerCard++;
+                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
+                        {
+
+                            if (!gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected)
+                            {
+                                gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected = false;
+                                gameManager.saveMelee[f].GetComponent<UnytCard>().powerCard++;
+                            }
+                        }
                     }
 
                 }
@@ -90,14 +104,21 @@ public class weatherCards : MonoBehaviour
 
         if (affected == "Range")
         {
-            for (int i = 0; i < gameManager.saveRange.Length; i++)
+            for (int f = 0; f < gameManager.saveRange.Length; f++)
             {
-                if (gameManager.saveRange[i] != null)
+                if (gameManager.saveRange[f] != null)
                 {
-                    if (gameManager.saveRange[i].GetComponent<cardsCharacteristic>().affected)
+                    if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().affected)
                     {
-                        gameManager.saveRange[i].GetComponent<cardsCharacteristic>().affected = false;
-                        gameManager.saveRange[i].GetComponent<UnytCard>().powerCard++;
+                        if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
+                        {
+
+                            if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected)
+                            {
+                                gameManager.saveRange[f].GetComponent<cardsCharacteristic>().affected = false;
+                                gameManager.saveRange[f].GetComponent<UnytCard>().powerCard++;
+                            }
+                        }
                     }
 
                 }
@@ -105,14 +126,21 @@ public class weatherCards : MonoBehaviour
         }
         if (affected == "Siege")
         {
-            for (int i = 0; i < gameManager.saveSiege.Length; i++)
+            for (int f = 0; f < gameManager.saveSiege.Length; f++)
             {
-                if (gameManager.saveSiege[i] != null)
+                if (gameManager.saveSiege[f] != null)
                 {
-                    if (gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().affected)
+                    if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().affected)
                     {
-                        gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().affected = false;
-                        gameManager.saveSiege[i].GetComponent<UnytCard>().powerCard++;
+                        if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().affected)
+                        {
+
+                            if (!gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().affected)
+                            {
+                                gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().affected = false;
+                                gameManager.saveSiege[f].GetComponent<UnytCard>().powerCard++;
+                            }
+                        }
                     }
 
                 }

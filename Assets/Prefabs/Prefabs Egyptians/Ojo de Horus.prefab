@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonus: Range
+  gameManager: {fileID: 0}
 --- !u!114 &2349423329353221829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +116,12 @@ MonoBehaviour:
   name: Ojo de Horus
   faction: Egyptians
   typeCard: Increase
-  hability: 
+  hability: Aumenta poder en fila propia
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &-2507580848840012729
 BoxCollider2D:
   m_ObjectHideFlags: 0

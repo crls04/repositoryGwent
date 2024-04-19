@@ -211,4 +211,16 @@ public class Deck : MonoBehaviour
         }
         return false;
     }
+
+    public void Vaciar(GameObject card)
+    {
+        for(int f = 0; f < hand.Length;f++)
+        {
+            if (hand[f] == card)
+            {
+                hand[f] = null;
+            }
+            
+        }
+    }
 }

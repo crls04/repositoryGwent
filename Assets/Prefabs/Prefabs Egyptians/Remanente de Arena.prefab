@@ -102,7 +102,12 @@ MonoBehaviour:
   name: Remanente de Arena
   faction: Egyptians
   typeCard: Decoy
-  hability: 
+  hability: Es intercambiable por cualquier carta unidad en campo propio
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!114 &-4298327426861738789
 MonoBehaviour:
   m_ObjectHideFlags: 0

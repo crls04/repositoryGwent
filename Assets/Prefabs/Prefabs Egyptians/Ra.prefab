@@ -101,7 +101,12 @@ MonoBehaviour:
   name: Ra
   faction: Egyptians
   typeCard: Leader
-  hability: 
+  hability: Disminuye el poder de ataque en 2
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &-6966060502538459816
 BoxCollider2D:
   m_ObjectHideFlags: 0

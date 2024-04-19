@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3822108330505275328}
   - component: {fileID: -5071368915192715266}
   - component: {fileID: 1040458413578636436}
+  - component: {fileID: 3647645532651530534}
   m_Layer: 0
   m_Name: "V\xE1li"
   m_TagString: Untagged
@@ -102,7 +103,13 @@ MonoBehaviour:
   name: "V\xE1li"
   faction: Vikings
   typeCard: Silver
-  hability: 
+  hability: Multiplica por (n) su ataque siendo (n) la cantidad de cartas iguales
+    a ella en el campo.
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!114 &-5071368915192715266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +150,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.68, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &3647645532651530534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533932354550846073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1aa7572527fb8349babbb1ac3a02755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  habilityCard: 5
+  Habilidad: 

@@ -102,7 +102,12 @@ MonoBehaviour:
   name: Loki
   faction: Vikings
   typeCard: Gold
-  hability: 
+  hability: None
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!114 &-5069650641917141085
 MonoBehaviour:
   m_ObjectHideFlags: 0

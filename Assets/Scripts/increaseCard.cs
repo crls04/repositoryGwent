@@ -20,36 +20,46 @@ public class increaseCard : MonoBehaviour
     }
     public void increase()
     {
+
         if(bonus == "Melee")
         {
-            for (int i = 0; i < gameManager.saveMelee.Length;i++)
+            for (int f = 0; f < gameManager.saveMelee.Length;f++)
             {
-                if (gameManager.saveMelee[i] != null)
+                if (gameManager.saveMelee[f] != null)
                 {
-                    if (gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
+                    if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if(!gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().increased)
+                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveMelee[i].GetComponent<cardsCharacteristic>().increased = true;
-                            gameManager.saveMelee[i].GetComponent<UnytCard>().powerCard++;
+
+
+                            if (!gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().increased)
+                            {
+                                gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().increased = true;
+                                gameManager.saveMelee[f].GetComponent<UnytCard>().powerCard++;
+                            }
                         }
                     }
                 }
             }
         }
-
         if (bonus == "Range")
         {
-            for (int i = 0; i < gameManager.saveRange.Length; i++)
+            for (int f = 0; f < gameManager.saveRange.Length; f++)
             {
-                if (gameManager.saveRange[i] != null)
+                if (gameManager.saveRange[f] != null)
                 {
-                    if (gameManager.saveRange[i].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
+                    if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if (!gameManager.saveRange[i].GetComponent<cardsCharacteristic>().increased)
+                        if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveRange[i].GetComponent<cardsCharacteristic>().increased = true;
-                            gameManager.saveRange[i].GetComponent<UnytCard>().powerCard++;
+
+
+                            if (!gameManager.saveRange[f].GetComponent<cardsCharacteristic>().increased)
+                            {
+                                gameManager.saveRange[f].GetComponent<cardsCharacteristic>().increased = true;
+                                gameManager.saveRange[f].GetComponent<UnytCard>().powerCard++;
+                            }
                         }
                     }
                 }
@@ -57,22 +67,27 @@ public class increaseCard : MonoBehaviour
         }
         if (bonus == "Siege")
         {
-            for (int i = 0; i < gameManager.saveSiege.Length; i++)
+            for (int f = 0; f < gameManager.saveSiege.Length; f++)
             {
-                if (gameManager.saveSiege[i] != null)
+                if (gameManager.saveSiege[f] != null)
                 {
-                    if (gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
+                    if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if (!gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().increased)
+                        if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
                         {
-                            gameManager.saveSiege[i].GetComponent<cardsCharacteristic>().increased = true;
-                            gameManager.saveSiege[i].GetComponent<UnytCard>().powerCard++;
+
+
+                            if (!gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().increased)
+                            {
+                                gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().increased = true;
+                                gameManager.saveSiege[f].GetComponent<UnytCard>().powerCard++;
+                            }
                         }
                     }
                 }
             }
         }
-
+        
     }
    
 }

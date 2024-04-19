@@ -11,17 +11,33 @@ public class passTurn : MonoBehaviour
     {
         if (player1.isActiveAndEnabled)
         {
-            player1.enabled = false;
-            player2.enabled = true;
-            gameManager.playFaction = "Vikings";
+            if(!gameManager.player2)
+            {
+                player1.enabled = false;
+                player2.enabled = true;
+                gameManager.playFaction = "Vikings";
+
+            }
+            if (!gameManager.playedTurn)
+            {
+                gameManager.player1 = true;
+            }
             gameManager.playedTurn = false;
             return;
         }
         if (player2.isActiveAndEnabled)
         {
-            player2.enabled = false;
-            player1.enabled = true;
-            gameManager.playFaction = "Egyptians";
+            if(!gameManager.player1)
+            {
+                player2.enabled = false;
+                player1.enabled = true;
+                gameManager.playFaction = "Egyptians";
+            }
+           
+            if (!gameManager.playedTurn)
+            {
+                gameManager.player2 = true;
+            }
             gameManager.playedTurn = false;
             return;
         }

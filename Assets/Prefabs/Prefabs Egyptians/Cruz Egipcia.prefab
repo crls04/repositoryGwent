@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonus: Melee
+  gameManager: {fileID: 0}
 --- !u!114 &7018655108030497573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +116,12 @@ MonoBehaviour:
   name: Cruz Egipcia
   faction: Egyptians
   typeCard: Increase
-  hability: 
+  hability: Aumenta poder en fila propia
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &6368438234982819701
 BoxCollider2D:
   m_ObjectHideFlags: 0

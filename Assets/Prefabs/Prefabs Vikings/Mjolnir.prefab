@@ -102,7 +102,12 @@ MonoBehaviour:
   name: Mjolnir
   faction: Vikings
   typeCard: Increase
-  hability: 
+  hability: Aumenta poder en fila propia
+  summonedCard: 0
+  increased: 0
+  affected: 0
+  image: {fileID: 0}
+  description: {fileID: 0}
 --- !u!61 &291326657369564325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonus: Melee
+  gameManager: {fileID: 0}
