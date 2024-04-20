@@ -39,6 +39,7 @@ public class passTurn : MonoBehaviour
                 gameManager.player2 = true;
             }
             gameManager.playedTurn = false;
+            gameManager.decoy = null;
             return;
         }
         

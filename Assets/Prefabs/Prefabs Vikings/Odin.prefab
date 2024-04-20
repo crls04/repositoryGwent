@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366521216727305986}
   - component: {fileID: 7347425948848971773}
+  - component: {fileID: 2238187134125053236}
   - component: {fileID: -5479121897219155413}
   - component: {fileID: 1253542691743515650}
   m_Layer: 0
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7347425948848971773
 SpriteRenderer:
@@ -86,6 +87,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2238187134125053236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568857332901460553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2d42699d9561b4aa82d3daa8801182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
 --- !u!114 &-5479121897219155413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5c4241804c2aa459171b7d5b85730b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Odin
+  gameManager: {fileID: 0}
+  Name: Odin
   faction: Vikings
   typeCard: Leader
   hability: Aumenta el poder de ataque en 2

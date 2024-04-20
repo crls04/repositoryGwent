@@ -113,7 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5c4241804c2aa459171b7d5b85730b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Cruz Egipcia
+  gameManager: {fileID: 0}
+  Name: Cruz Egipcia
   faction: Egyptians
   typeCard: Increase
   hability: Aumenta poder en fila propia

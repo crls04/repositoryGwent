@@ -139,7 +139,7 @@ public class habilityCards : MonoBehaviour
                 {
                     if (gameManager.saveMelee[f] != null)
                     {
-                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().name == GetComponent<cardsCharacteristic>().name)
+                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().Name == GetComponent<cardsCharacteristic>().Name)
                         {
                             if (gameManager.saveMelee[f] != gameObject)
                             {

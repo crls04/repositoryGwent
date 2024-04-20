@@ -38,7 +38,6 @@ public class Deck : MonoBehaviour
     private void Start()
     {
         shuffle();
-        drawCard(10);
     }
     public void shuffle()
     {
@@ -207,6 +206,17 @@ public class Deck : MonoBehaviour
                 card.transform.localScale = clearance.transform.localScale;
                 gameManager.playedTurn = true;
                 return true;
+            }
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Decoy")
+            {
+                gameManager.decoy = card;
+                for(int f = 0; f < hand.Length;f++)
+                {
+                    if (hand[f] == card)
+                    {
+                        gameManager.decoyPosition = f;
+                    }
+                }
             }
         }
         return false;

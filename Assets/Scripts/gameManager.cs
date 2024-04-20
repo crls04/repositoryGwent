@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
+    public GameObject decoy = null;
+    public int decoyPosition;
     public string playFaction = "Egyptians";
     public bool playedTurn;
     public bool player1 = false;
@@ -17,8 +19,9 @@ public class gameManager : MonoBehaviour
     public GameObject[] saveRange = new GameObject[8];
     public GameObject[] saveSiege = new GameObject[8];
     public TextMeshProUGUI text1, text2;
-    private int power1, power2,round1,round2;
+    public int power1, power2,round1,round2;
     public TextMeshProUGUI textRound1, textRound2;
+    public bool initial1, initial2 = true;
 
     private void Update()
     {
@@ -27,6 +30,8 @@ public class gameManager : MonoBehaviour
         comparePower();
         TextUI1();
     }
+
+   
     private void Powers()
     {
         power1 = 0;
