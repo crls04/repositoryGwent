@@ -31,15 +31,19 @@ public class initialGame : MonoBehaviour
 
     public void Siguiente_Jugador()
     {
-        if(manager.playFaction == "Vikings" && manager.initial2)
+        if(manager.round1 == 0 && manager.round2 == 0)
         {
-            for (int f = 0; f < Image.Length; f++)
+            if (manager.playFaction == "Vikings" && manager.initial2)
             {
-                Image[f].texture = deck2.hand[f].GetComponent<SpriteRenderer>().sprite.texture;
-                Image[f].transform.localScale = Vector2.one;
+                for (int f = 0; f < Image.Length; f++)
+                {
+                    Image[f].texture = deck2.hand[f].GetComponent<SpriteRenderer>().sprite.texture;
+                    Image[f].transform.localScale = Vector2.one;
+                }
+                Boton.transform.localScale = Vector2.one;
             }
-            Boton.transform.localScale = Vector2.one;
         }
+        
     }
 
     public void Botar(int carta, Deck deck)

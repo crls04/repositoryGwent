@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class gameManager : MonoBehaviour
@@ -22,13 +23,14 @@ public class gameManager : MonoBehaviour
     public int power1, power2,round1,round2;
     public TextMeshProUGUI textRound1, textRound2;
     public bool initial1, initial2 = true;
-
+    public GameObject gan1,gan2, empate,boton;
     private void Update()
     {
         Powers();
         TextUI();
         comparePower();
         TextUI1();
+        End_Game();
     }
 
    
@@ -73,6 +75,24 @@ public class gameManager : MonoBehaviour
                     power2 += saveSiege[i].GetComponent<UnytCard>().powerCard;
                 }
             }
+        }
+    }
+    private void End_Game()
+    {
+        if(round1 == 2 && round2 != 2)
+        {
+            gan1.SetActive(true);
+            boton.SetActive(true);
+        }
+        if (round2 == 2 && round1 != 2)
+        {
+            gan2.SetActive(true);
+            boton.SetActive(true);
+        }
+        if (round1 == 2 && round2 == 2)
+        {
+            empate.SetActive(true);
+            boton.SetActive(true);
         }
     }
     private void TextUI()
