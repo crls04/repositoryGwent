@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Ansuz
   faction: Vikings
-  typeCard: Increase
+  typeCard: Aumento
   hability: Aumenta poder en fila propia
   summonedCard: 0
   increased: 0

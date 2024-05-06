@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fuera_Carta : MonoBehaviour
+public class pushCard : MonoBehaviour
 {
     public initialGame game;
     public int carta = 0;

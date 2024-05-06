@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &810827571884664901
 SpriteRenderer:
@@ -102,7 +102,7 @@ MonoBehaviour:
   Name: Ra
   faction: Egyptians
   typeCard: Leader
-  hability: Disminuye el poder de ataque en 2
+  hability: Destruye una fila de cartas de asedio.
   summonedCard: 0
   increased: 0
   affected: 0

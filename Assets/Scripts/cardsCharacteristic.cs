@@ -86,7 +86,7 @@ public class cardsCharacteristic : MonoBehaviour
     {
         image.GetComponent<RawImage>().texture = GetComponent<SpriteRenderer>().sprite.texture;
         image.transform.localScale = Vector3.one;
-        description.GetComponent<TextMeshProUGUI>().text = "name: "+ Name +"\nfaction: "+ faction + "\ntype card: " + typeCard + "\nhability: \n" + hability;
+        description.GetComponent<TextMeshProUGUI>().text = "nombre:"+ Name +"\nfaccion:"+ faction + "\ntipo:" + typeCard + "\nhabilidad:" + hability;
         GameObject.FindGameObjectWithTag("imageDescription").transform.localScale = Vector3.one;
     }
 

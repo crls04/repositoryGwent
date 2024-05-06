@@ -116,7 +116,7 @@ MonoBehaviour:
   Name: Odin
   faction: Vikings
   typeCard: Leader
-  hability: Aumenta el poder de ataque en 2
+  hability: Destruye una fila de cartas de rango.
   summonedCard: 0
   increased: 0
   affected: 0

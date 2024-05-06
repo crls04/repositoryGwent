@@ -6,4 +6,5 @@ public class UnytCard : MonoBehaviour
 {
     public int powerCard;
     public string attakMode;
+    
 }

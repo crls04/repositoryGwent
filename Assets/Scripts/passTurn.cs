@@ -11,14 +11,14 @@ public class passTurn : MonoBehaviour
     {
         if (player1.isActiveAndEnabled)
         {
-            if(!gameManager.player2)
+            if(!gameManager.player2 && !gameManager.initial1)
             {
                 player1.enabled = false;
                 player2.enabled = true;
                 gameManager.playFaction = "Vikings";
 
             }
-            if (!gameManager.playedTurn)
+            if (!gameManager.playedTurn && !gameManager.initial1)
             {
                 gameManager.player1 = true;
             }
@@ -27,14 +27,14 @@ public class passTurn : MonoBehaviour
         }
         if (player2.isActiveAndEnabled)
         {
-            if(!gameManager.player1)
+            if(!gameManager.player1 && !gameManager.initial2)
             {
                 player2.enabled = false;
                 player1.enabled = true;
                 gameManager.playFaction = "Egyptians";
             }
            
-            if (!gameManager.playedTurn)
+            if (!gameManager.playedTurn && !gameManager.initial2)
             {
                 gameManager.player2 = true;
             }

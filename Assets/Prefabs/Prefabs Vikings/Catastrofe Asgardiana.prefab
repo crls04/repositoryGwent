@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Catastrofe Asgardiana
   faction: Vikings
-  typeCard: Weather
+  typeCard: Clima
   hability: Afecta una unidad quitandole poder
   summonedCard: 0
   increased: 0
