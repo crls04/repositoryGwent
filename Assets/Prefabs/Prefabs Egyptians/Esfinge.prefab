@@ -103,7 +103,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Esfinge
   faction: Egyptians
-  typeCard: Silver
+  typeCard: Plata
   hability: Coloca un aumento en fila propia.
   summonedCard: 0
   increased: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 1
   attakMode: Siege
+  description: {fileID: 0}
 --- !u!61 &-8951501974013700232
 BoxCollider2D:
   m_ObjectHideFlags: 0

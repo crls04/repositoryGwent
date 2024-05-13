@@ -440,8 +440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0055128, y: -15.9867}
-  m_SizeDelta: {x: 1366, y: 736.0267}
+  m_AnchoredPosition: {x: -1.0317, y: -22.628088}
+  m_SizeDelta: {x: 1274.9531, y: 722.7439}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362593262
 MonoBehaviour:
@@ -463,7 +463,38 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '      bienvenidos'
+  m_text: "      (voz de narador de dark souls)*... Oh, si estas por aqui debe ser
+    porque tu alma aun debe depurar muchos de sus pecados en este mundo de oscuridad,
+    te recomiendo leer este pergamino, pues te explicara como poder ganar la hasta
+    ahora, interminable guerra, entre nordicos y egipcios oscuros mediante duelos
+    de cartas, interesante no ?\n\n      Al comenzar una partida, cada jugador roba
+    10 cartas de su deck. antes de que arranque la batalla, los jugadores pueden
+    escoger hasta 2 cartas\r                                                                                                            
+    para regresarlas a la baraja y robar la misma cantidad. La maxima cantidad \xB4\r\nde
+    cartas que se puede tener en la mano es 10, cualquier otra carta robada que supere
+    el limite sera descartada. El jugador que gane la ronda anterior, sera quien
+    comience la siguiente\r.                  . Al inicio de la segunda ronda cada
+    jugador roba 2 cartas y si el juego alcanza una tercera ronda cada jugador roba
+    tambien 2 cartas antes de comenzarla. Por otra parte cada jugador tienen un campo
+    formado por tres filas, una para las cartas cuerpo a cuerpo(M), otra para las
+    de rango(R) yotra para las de asedio(s). cada fila tiene espacio para una carta
+    de aumento las cuales dan bonificacion de poder en una fila especifica. lomismo
+    pasa con las cartas clima lo que estas disminuyen poder y tienen un espacio en
+    cada filacde cada jugador individualmente. a esto se le suma un espacio al mazo,
+    cementerio y carta lider. cada carta va colocada en la fila de su modo de ataque
+    ya sea (M), (R) o (S). todas las cartas de unidad tienen un indicador de poder,
+    las cartas (ORO) no son afectadas por ningun tipode habilidad y cada una puede
+    tener un efecto al ser colocadas. porotra parte quedan las cartas de tipo despeje
+    y senuelo. la primera mencionada quita todos los tipos de carta clima y el senuelo
+    permite colocar una carta con poder 0 en lugar de una carta del campo para regresar
+    a la mano. tambien cada lider tiene una habilidad especifica. la logica del juego
+    consiste en jugar una carta, utilizar una habilidad de lider o pasar. el hecho
+    de pasar implica que el jugador termino de jugar en la ronda actual y portanto
+    no utilizara ninguna otra carta, en el momento en que los dos jugadores hayan
+    pasado, la ronda termina, todas las cartas son enviadas al cementerio y la persona
+    con mayor puntaje ganara. dos rondas ganadas marcan la victoria. si la ronda
+    termina en empate, cada jugador obtiene un punto de ronda. espero que estas instrucciones
+    te sean de ayuda para ganar la batalla, animo !    \n\n      \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2a9c02466e33294c84b64d196b3b795, type: 2}
   m_sharedMaterial: {fileID: -2347784510324460315, guid: e2a9c02466e33294c84b64d196b3b795, type: 2}
@@ -490,8 +521,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -981,8 +1012,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320968981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -683.0093, y: -384.0129, z: 0}
-  m_LocalScale: {x: 1.735033, y: 1.2152385, z: 1}
+  m_LocalPosition: {x: -683.0352, y: -383.9611, z: 0}
+  m_LocalScale: {x: 1.7400646, y: 1.227877, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1014975063}
@@ -1210,8 +1241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002, y: -101.474556}
-  m_SizeDelta: {x: 2206.4102, y: 1175.5863}
+  m_AnchoredPosition: {x: -0.002, y: -87.6775}
+  m_SizeDelta: {x: 2206.4102, y: 1203.1803}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388171290
 MonoBehaviour:

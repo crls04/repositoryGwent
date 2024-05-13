@@ -21,6 +21,7 @@ public class leaderVikings : MonoBehaviour
                     }
                 }
                 activate = true;
+                manager.playedTurn = true;
             }
         }
     }

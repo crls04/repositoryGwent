@@ -101,7 +101,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Ra
   faction: Egyptians
-  typeCard: Leader
+  typeCard: Lider
   hability: Destruye una fila de cartas de asedio.
   summonedCard: 0
   increased: 0

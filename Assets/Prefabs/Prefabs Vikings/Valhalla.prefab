@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Valhalla
   faction: Vikings
-  typeCard: Clearance
+  typeCard: Despeje
   hability: Elimina todos los climas activados
   summonedCard: 0
   increased: 0

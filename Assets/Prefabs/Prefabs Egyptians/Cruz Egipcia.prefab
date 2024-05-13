@@ -116,8 +116,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Cruz Egipcia
   faction: Egyptians
-  typeCard: Increase
-  hability: Aumenta poder en fila propia
+  typeCard: Aumento
+  hability: Aumenta poder en fila cuerpo a cuerpo(M).
   summonedCard: 0
   increased: 0
   affected: 0

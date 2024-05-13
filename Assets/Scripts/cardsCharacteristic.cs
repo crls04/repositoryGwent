@@ -31,9 +31,11 @@ public class cardsCharacteristic : MonoBehaviour
             summonedCard = GameObject.FindGameObjectWithTag(faction).GetComponent<Deck>().summonCards(gameObject);
             dontNext = true;
         }
-        if(summonedCard && gameManager.decoy!=null && !dontNext && typeCard!= "Decoy" && !gameManager.playedTurn)
+
+        //Fragmento para intercambio con el senuelo
+        if(summonedCard && gameManager.decoy!=null && !dontNext && typeCard!= "Senuelo" && !gameManager.playedTurn)
         {
-            if (typeCard == "Silver" || typeCard == "Gold")
+            if (typeCard == "Plata" || typeCard == "Oro")
             {
                 if (faction == gameManager.decoy.GetComponent<cardsCharacteristic>().faction)
                 {
@@ -48,29 +50,29 @@ public class cardsCharacteristic : MonoBehaviour
                     {
                         gameObject.transform.position = gameManager.deck2.handPosition[gameManager.decoyPosition].transform.position;
                     }
-                    for (int i = 0; i < 8; i++)
+                    for (int f = 0; f < 8; f++)
                     {
-                        if (gameManager.saveMelee[i] != null)
+                        if (gameManager.saveMelee[f] != null)
                         {
-                            if (gameObject == gameManager.saveMelee[i])
+                            if (gameObject == gameManager.saveMelee[f])
                             {
-                                gameManager.saveMelee[i] = decoy1;
+                                gameManager.saveMelee[f] = decoy1;
                             }
                         }
 
-                        if (gameManager.saveRange[i] != null)
+                        if (gameManager.saveRange[f] != null)
                         {
-                            if (gameObject == gameManager.saveRange[i])
+                            if (gameObject == gameManager.saveRange[f])
                             {
-                                gameManager.saveRange[i] = decoy1;
+                                gameManager.saveRange[f] = decoy1;
                             }
                         }
 
-                        if (gameManager.saveSiege[i] != null)
+                        if (gameManager.saveSiege[f] != null)
                         {
-                            if (gameObject == gameManager.saveSiege[i])
+                            if (gameObject == gameManager.saveSiege[f])
                             {
-                                gameManager.saveSiege[i] = decoy1;
+                                gameManager.saveSiege[f] = decoy1;
                             }
                         }
                     }
@@ -82,14 +84,17 @@ public class cardsCharacteristic : MonoBehaviour
         }
         
     }
+
+    //Utilizado para mostrar descripcion de las cartas
     private void OnMouseEnter()
     {
         image.GetComponent<RawImage>().texture = GetComponent<SpriteRenderer>().sprite.texture;
         image.transform.localScale = Vector3.one;
-        description.GetComponent<TextMeshProUGUI>().text = "nombre:"+ Name +"\nfaccion:"+ faction + "\ntipo:" + typeCard + "\nhabilidad:" + hability;
+        description.GetComponent<TextMeshProUGUI>().text = "nombre:"+ Name + "\ntipo:" + typeCard + "\nhabilidad:" + hability;
         GameObject.FindGameObjectWithTag("imageDescription").transform.localScale = Vector3.one;
     }
 
+    //Utilizado para cerrar descripcion de las cartas
     private void OnMouseExit()
     {
         image.transform.localScale = Vector3.zero;

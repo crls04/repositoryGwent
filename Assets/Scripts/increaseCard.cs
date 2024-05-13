@@ -29,7 +29,7 @@ public class increaseCard : MonoBehaviour
                 {
                     if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
+                        if (gameManager.saveMelee[f].GetComponent<cardsCharacteristic>().typeCard == "Plata")
                         {
 
 
@@ -51,7 +51,7 @@ public class increaseCard : MonoBehaviour
                 {
                     if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
+                        if (gameManager.saveRange[f].GetComponent<cardsCharacteristic>().typeCard == "Plata")
                         {
 
 
@@ -73,7 +73,7 @@ public class increaseCard : MonoBehaviour
                 {
                     if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().faction == GetComponent<cardsCharacteristic>().faction)
                     {
-                        if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().typeCard == "Silver")
+                        if (gameManager.saveSiege[f].GetComponent<cardsCharacteristic>().typeCard == "Plata")
                         {
 
 

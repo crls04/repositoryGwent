@@ -103,7 +103,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Vali
   faction: Vikings
-  typeCard: Silver
+  typeCard: Plata
   hability: Multiplica por (n) su ataque siendo (n) la cantidad de cartas iguales
     a ella en el campo.
   summonedCard: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 2
   attakMode: Range
+  description: {fileID: 0}
 --- !u!61 &1040458413578636436
 BoxCollider2D:
   m_ObjectHideFlags: 0

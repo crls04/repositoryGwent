@@ -102,8 +102,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Mjolnir
   faction: Vikings
-  typeCard: Increase
-  hability: Aumenta poder en fila propia
+  typeCard: Aumento
+  hability: Aumenta poder en fila cuerpo a cuerpo(M)
   summonedCard: 0
   increased: 0
   affected: 0

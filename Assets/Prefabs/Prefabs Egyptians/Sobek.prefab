@@ -103,7 +103,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Sobek
   faction: Egyptians
-  typeCard: Gold
+  typeCard: Oro
   hability: Al ser invocado permite robar una carta.
   summonedCard: 0
   increased: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 2
   attakMode: Melee
+  description: {fileID: 0}
 --- !u!61 &-1188667007271714791
 BoxCollider2D:
   m_ObjectHideFlags: 0

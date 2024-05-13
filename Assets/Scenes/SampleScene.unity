@@ -7308,7 +7308,7 @@ MonoBehaviour:
   decoy: {fileID: 0}
   decoyPosition: 0
   playFaction: Egyptians
-  playedTurn: 0
+  playedTurn: 1
   player1: 0
   player2: 0
   deck1: {fileID: 646040455}

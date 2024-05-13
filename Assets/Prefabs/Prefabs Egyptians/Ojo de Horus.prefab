@@ -116,8 +116,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Ojo de Horus
   faction: Egyptians
-  typeCard: Increase
-  hability: Aumenta poder en fila propia
+  typeCard: Aumento
+  hability: Aumenta poder en fila de rango(R)
   summonedCard: 0
   increased: 0
   affected: 0

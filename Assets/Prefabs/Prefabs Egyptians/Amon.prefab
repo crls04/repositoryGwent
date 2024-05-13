@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Amon
   faction: Egyptians
-  typeCard: Gold
+  typeCard: Oro
   hability: None
   summonedCard: 0
   increased: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 2
   attakMode: Range
+  description: {fileID: 0}
 --- !u!61 &1356151138368864671
 BoxCollider2D:
   m_ObjectHideFlags: 0

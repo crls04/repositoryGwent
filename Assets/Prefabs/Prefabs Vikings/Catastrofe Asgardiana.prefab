@@ -103,7 +103,7 @@ MonoBehaviour:
   Name: Catastrofe Asgardiana
   faction: Vikings
   typeCard: Clima
-  hability: Afecta una unidad quitandole poder
+  hability: Afecta una unidad de asedio(S) quitandole poder
   summonedCard: 0
   increased: 0
   affected: 0

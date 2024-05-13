@@ -34,10 +34,12 @@ public class gameManager : MonoBehaviour
     }
 
    
+    //Metodo para calcular poder de cada jugador
     private void Powers()
     {
         power1 = 0;
         power2 = 0;
+        //Ciclo para comprobar cada fila del campo
         for(int i = 0; i < 8; i++)
         {
             if (saveMelee[i] != null)
@@ -77,6 +79,8 @@ public class gameManager : MonoBehaviour
             }
         }
     }
+
+    //Metodo que verifica constantemente las rondas ganadas
     private void End_Game()
     {
         if(round1 == 2 && round2 != 2)
@@ -95,6 +99,8 @@ public class gameManager : MonoBehaviour
             boton.SetActive(true);
         }
     }
+
+    //Metodo para mostrar visualmente el poder de cada jugador
     private void TextUI()
     {
         if(playFaction == "Vikings")
@@ -108,6 +114,8 @@ public class gameManager : MonoBehaviour
             text2.text = "Poder: " + power2.ToString();
         }
     }
+
+    //Metodo para determinar que jugador gano la ronda
     public void comparePower()
     {
         if (player1&&player2==true)
@@ -125,6 +133,7 @@ public class gameManager : MonoBehaviour
                 round1++;
                 round2++;
             }
+            //vaciar el campo
             for (int f = 0; f < 8;f++)
             {
                 if (saveMelee[f] != null)
@@ -143,7 +152,15 @@ public class gameManager : MonoBehaviour
                     saveSiege[f] = null;
                 }
             }
-            deck1.melee1 = new bool[4];
+            for (int f = 0; f < 6; f++)
+            {
+                if (saveWeather[f] != null)
+                {
+                    Destroy(saveWeather[f]);
+                    saveWeather[f] = null;
+                }
+            }
+                deck1.melee1 = new bool[4];
             deck1.range1 = new bool[4];
             deck1.siege1 = new bool[4];
             deck1.increase1 = new bool[3];
@@ -159,6 +176,8 @@ public class gameManager : MonoBehaviour
 
         }
     }
+
+    //Metodo para mostrar visualmente la cantidad de rondas ganadas
     private void TextUI1()
     {
         if (playFaction == "Vikings")

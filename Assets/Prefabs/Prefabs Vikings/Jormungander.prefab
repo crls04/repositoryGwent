@@ -103,8 +103,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Jormungander
   faction: Vikings
-  typeCard: Silver
-  hability: Elimina la carta con menos poder del rival
+  typeCard: Plata
+  hability: Elimina la carta con menos poder del rival.
   summonedCard: 0
   increased: 0
   affected: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 3
   attakMode: Siege
+  description: {fileID: 0}
 --- !u!61 &-2952161255653427703
 BoxCollider2D:
   m_ObjectHideFlags: 0

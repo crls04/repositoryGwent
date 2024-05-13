@@ -11,7 +11,8 @@ public class clearenceCard : MonoBehaviour
     {
         gameManager = GameObject.FindGameObjectWithTag("gameManager").GetComponent<gameManager>();
     }
-    public void clear()
+    //Revisa cada posicion de clima y si encuentra quita su efecto y lo elimina
+    public void Clear()
     {
         for (int f = 0; f < gameManager.saveWeather.Length; f++)
         {
@@ -36,8 +37,8 @@ public class clearenceCard : MonoBehaviour
     {
         if (GetComponent<cardsCharacteristic>().summonedCard)
         {
-           clear();
-           Destroy(gameObject,1);
+           Clear();
+           Destroy(gameObject,2.5f);
         }
     }
 }

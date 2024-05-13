@@ -103,7 +103,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Thor
   faction: Vikings
-  typeCard: Gold
+  typeCard: Oro
   hability: invoca una carta clima.
   summonedCard: 0
   increased: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 3
   attakMode: Melee
+  description: {fileID: 0}
 --- !u!61 &2676259670482943150
 BoxCollider2D:
   m_ObjectHideFlags: 0

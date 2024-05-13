@@ -29,6 +29,7 @@ public class initialGame : MonoBehaviour
         }
     }
 
+    //Metodo que muestra cartas a descartar del rival
     public void Siguiente_Jugador()
     {
         if(manager.round1 == 0 && manager.round2 == 0)
@@ -41,11 +42,14 @@ public class initialGame : MonoBehaviour
                     Image[f].transform.localScale = Vector2.one;
                 }
                 Boton.transform.localScale = Vector2.one;
+                manager.playedTurn = true;
             }
+            
         }
         
     }
 
+    //Metodo que descarta y roba carta nueva
     public void Botar(int carta, Deck deck)
     {
         Destroy(deck.hand[carta]);
@@ -59,6 +63,7 @@ public class initialGame : MonoBehaviour
         }
     }
 
+    //Metodo que permite comenzar a invocar carta
     public void End_Fase()
     {
         for(int f = 0; f < Image.Length; f++)
@@ -78,5 +83,6 @@ public class initialGame : MonoBehaviour
             manager.initial1 = false;
         }
         cant = 0;
+        manager.playedTurn = false;
     }
 }

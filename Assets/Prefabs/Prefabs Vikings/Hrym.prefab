@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Hrym
   faction: Vikings
-  typeCard: Silver
+  typeCard: Plata
   hability: None
   summonedCard: 0
   increased: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 2
   attakMode: Siege
+  description: {fileID: 0}
 --- !u!61 &-9177285226493885613
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class leaderEgyptians : MonoBehaviour
                         manager.saveSiege[f] = null;
                     }
                 }
+                manager.playedTurn = true;
                 activate = true;
             }
         }

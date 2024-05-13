@@ -7,6 +7,7 @@ public class passTurn : MonoBehaviour
     public gameManager gameManager;
     public Camera player1;
     public Camera player2;
+    //Metodo que realiza el intercambio de camaras y permite jugadas nuevas
     public void changeTurn()
     {
         if (player1.isActiveAndEnabled)

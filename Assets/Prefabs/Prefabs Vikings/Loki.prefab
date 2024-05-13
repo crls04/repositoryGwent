@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Loki
   faction: Vikings
-  typeCard: Gold
+  typeCard: Oro
   hability: None
   summonedCard: 0
   increased: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 2
   attakMode: Range
+  description: {fileID: 0}
 --- !u!61 &1511696307048060127
 BoxCollider2D:
   m_ObjectHideFlags: 0

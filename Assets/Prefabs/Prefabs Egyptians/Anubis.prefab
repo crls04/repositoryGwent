@@ -103,7 +103,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Anubis
   faction: Egyptians
-  typeCard: Gold
+  typeCard: Oro
   hability: Elimina la carta con mas poder del campo.
   summonedCard: 0
   increased: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 3
   attakMode: Melee
+  description: {fileID: 0}
 --- !u!61 &-8972903004911945537
 BoxCollider2D:
   m_ObjectHideFlags: 0

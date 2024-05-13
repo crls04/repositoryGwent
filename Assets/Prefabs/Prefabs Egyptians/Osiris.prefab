@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Osiris
   faction: Egyptians
-  typeCard: Silver
+  typeCard: Plata
   hability: None
   summonedCard: 0
   increased: 0
@@ -121,8 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265ee995ee8c2b9428a3768422bd9839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerCard: 3
+  powerCard: 2
   attakMode: Melee
+  description: {fileID: 0}
 --- !u!61 &-3134954379332784591
 BoxCollider2D:
   m_ObjectHideFlags: 0

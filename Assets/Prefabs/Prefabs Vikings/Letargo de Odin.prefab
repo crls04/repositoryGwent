@@ -102,8 +102,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Letargo de Odin
   faction: Vikings
-  typeCard: Weather
-  hability: Afecta una unidad quitandole poder
+  typeCard: Clima
+  hability: Afecta una unidad de rango(R) quitandole poder
   summonedCard: 0
   increased: 0
   affected: 0

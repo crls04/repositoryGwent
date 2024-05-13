@@ -102,8 +102,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Remanente de Arena
   faction: Egyptians
-  typeCard: Decoy
-  hability: Es intercambiable por cualquier carta unidad en campo propio
+  typeCard: Senuelo
+  hability: Es intercambiable por cualquier carta unidad en el campo propio.
   summonedCard: 0
   increased: 0
   affected: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 0
   attakMode: 
+  description: {fileID: 0}
 --- !u!61 &714870410799986023
 BoxCollider2D:
   m_ObjectHideFlags: 0

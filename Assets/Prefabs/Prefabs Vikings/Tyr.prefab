@@ -102,7 +102,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Tyr
   faction: Vikings
-  typeCard: Gold
+  typeCard: Oro
   hability: None
   summonedCard: 0
   increased: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerCard: 3
   attakMode: Melee
+  description: {fileID: 0}
 --- !u!61 &1127456067993637303
 BoxCollider2D:
   m_ObjectHideFlags: 0

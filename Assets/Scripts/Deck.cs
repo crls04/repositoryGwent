@@ -69,7 +69,8 @@ public class Deck : MonoBehaviour
     {
         if (!gameManager.playedTurn) 
         {
-            if (card.GetComponent<cardsCharacteristic>().typeCard == "Silver" || card.GetComponent<cardsCharacteristic>().typeCard == "Gold")
+            //Verificacion para cartas unidad
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Plata" || card.GetComponent<cardsCharacteristic>().typeCard == "Oro")
             {
                 for (int f = 0; f < melee1.Length; f++)
                 {
@@ -127,7 +128,8 @@ public class Deck : MonoBehaviour
                 }
 
             }
-            if (card.GetComponent<cardsCharacteristic>().typeCard == "Increase")
+            //Verificacion para cartas de aumento
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Aumento")
 
             {
                 if (card.GetComponent<increaseCard>().bonus == "Melee" && !increase1[0])
@@ -152,7 +154,8 @@ public class Deck : MonoBehaviour
                     return true;
                 }
             }
-            if (card.GetComponent<cardsCharacteristic>().typeCard == "Weather")
+            //Verificacion para cartas de clima
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Clima")
             {
                 if (card.GetComponent<weatherCards>().affected == "Melee" && !weather1[0])
                 {
@@ -200,14 +203,16 @@ public class Deck : MonoBehaviour
                     return true;
                 }
             }
-            if(card.GetComponent<cardsCharacteristic>().typeCard == "Clearance")
+            //Verificacion para cartas de despeje
+            if(card.GetComponent<cardsCharacteristic>().typeCard == "Despeje")
             {
                 card.transform.position = clearance.transform.position;
                 card.transform.localScale = clearance.transform.localScale;
                 gameManager.playedTurn = true;
                 return true;
             }
-            if (card.GetComponent<cardsCharacteristic>().typeCard == "Decoy")
+            //Verificacion para carta de senuelo
+            if (card.GetComponent<cardsCharacteristic>().typeCard == "Senuelo")
             {
                 gameManager.decoy = card;
                 for(int f = 0; f < hand.Length;f++)
@@ -222,6 +227,7 @@ public class Deck : MonoBehaviour
         return false;
     }
 
+    //Metodo para quitar carta de la mano
     public void Vaciar(GameObject card)
     {
         for(int f = 0; f < hand.Length;f++)

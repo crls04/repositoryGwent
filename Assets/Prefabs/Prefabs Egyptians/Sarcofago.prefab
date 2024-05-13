@@ -102,8 +102,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Name: Sarcofago
   faction: Egyptians
-  typeCard: Increase
-  hability: Aumenta poder en fila propia
+  typeCard: Aumento
+  hability: Aumenta poder en fila de asedio(S).
   summonedCard: 0
   increased: 0
   affected: 0
